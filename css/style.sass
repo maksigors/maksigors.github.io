@@ -1,0 +1,634 @@
+$line : #282b30
+$color : #ff9900
+$font : "Poppins", Arial, sans-serif
+@import "_common"
+@import "_mobile"
+body
+	min-width: 320px
+
+.hero
+	display: flex
+	//flex-direction: column
+	justify-content: center
+	align-items: center
+
+	height: 100vh
+	background: url(..//img/bg-hero.jpg) no-repeat
+	background-position: center bottom
+	border-bottom: 4px solid $line
+	.logo
+		position: absolute
+		left: 20px
+		top: 30px
+		&:hover
+			cursor: pointer
+
+	&-title
+
+		height: 100%
+		text-align: center
+		//border: 1px solid #000
+
+		h1
+			font-size: 200px
+			color: #fff
+			//letter-spacing: 60%
+		p
+			font-size: 36px
+			line-height: 48px
+			color: #fff
+			margin-bottom: 20px
+	.arrow
+		position: absolute
+		bottom: 46px
+		left: 50%
+		margin-left: -12px
+		height: 20px
+		width: 20px
+		border-right: 4px solid #fff		
+		border-bottom: 4px solid #fff
+		transform: rotate(45deg)	
+		transition: all .5s
+
+		&:hover
+			border-right: 4px solid $purple		
+			border-bottom: 4px solid $purple
+			cursor: pointer	
+			transform: rotate(405deg) 
+			//box-shadow: 0 0 3px 1px #fff
+		&:active
+			transform: rotate(-405deg) 
+
+// ===========  ABOUT
+
+.about
+	background-color: #fff
+	padding: 160px 0 140px
+	
+	.about-top
+		display: flex
+		justify-content: space-between
+		//min-height: 650px
+		//max-width: 1140px
+		//background-image: url(..//img/about-1.jpg)
+		//background-repeat: no-repeat
+		//background-position: right 0
+		margin-bottom: 150px
+
+	.top_des
+		flex: none
+		min-width: 320px
+		h3
+			font-size: 80px
+			line-height: 100px
+			font-weight: 600
+			margin-bottom: 40px
+		span
+			font-size: 18px
+			line-height: 30px
+			font-weight: 300
+			display: block
+			margin-bottom: 40px
+	.top_img
+		width: 1140px
+		height: 650px			
+		img
+			//width: 100%
+			//height: auto
+	.about-bottom
+		display: flex
+		justify-content: space-between
+	.bottom_des
+		flex: none
+		min-width: 320px
+		h3
+			font-size: 80px
+			line-height: 100px
+			font-weight: 600
+			margin-bottom: 20px
+		span
+			font-size: 18px
+			line-height: 30px
+			font-weight: 300
+			display: block
+			margin-bottom: 40px
+		p
+			font-size: 14px
+			line-height: 24px
+			text-align: justify
+	.bottom_img
+		width: 1140px
+		height: 650px
+		
+		img
+			//width: 100%
+			//height: auto
+
+// ===========  PORTFOLIO
+
+.portfolio
+	background-color: #fff
+	padding: 20px 0 150px
+	&-menu
+		margin-bottom: 100px
+		ul
+			list-style: none
+			margin: 0
+			padding: 0
+			display: flex
+			justify-content: center
+
+		li
+			margin: 0 15px
+			a
+				color: #818586
+				font-size: 18px
+				line-height: 20px
+				font-weight: 500
+				letter-spacing: -0.05em
+				&:hover
+					color: $purple
+					opacity: .5
+				&.now
+					color: $black
+	.wrapper
+		//text-align: center
+	.gallery
+		.blink-2:hover img
+			transform: scale(.99)
+			box-shadow: 0 0 5px $purple
+		.blink-2:hover .img-title h4
+			text-shadow: 0 0 2px $purple
+		.blink
+			position: relative
+			overflow: hidden
+			&:before
+				content: ''
+				position: absolute
+				top: -20px
+				left: -380px
+				height: 900px
+				width: 500px
+				background: linear-gradient(90deg, rgba(0,255,255,.1), rgba(255,0,255,.3))
+				transform: skewX(-45deg)
+				opacity: 0
+				transition: .7s ease-in-out
+		.blink:hover:before
+			opacity: 1
+			left: 800px
+			transition: 1s ease-in-out
+
+		.img-title
+
+			position: absolute
+			left: 45px
+			bottom: 50px
+			p
+				font-size: 18px
+				font-weight: 500
+				letter-spacing: -0.05em
+				color: #fff
+				text-shadow: 0px 0px 1px rgba(0,0,0,.3)
+
+			h4
+				transition: all .7s
+				margin-top: 12px
+				color: #fff
+				font-size: 24px
+				font-weight: 600
+				letter-spacing: -0.05e
+				text-shadow: 0px 0px 1px rgba(0,0,0,.3)
+
+		img
+			width: 100%
+			height: auto
+			transition: all .7s
+
+		.row-1
+			display: flex
+			flex-wrap: wrap
+			flex-direction: column
+			height: 800px
+			margin-bottom: 15px
+			overflow: hidden
+			
+			.cell-1
+				position: relative
+				width: 800px
+				height: 820px
+				margin-right: 15px
+				flex: auto
+
+			.cell-2
+				position: relative
+				width: 800px
+				height: 340px
+				//margin-top: -10px
+				margin-bottom: 10px
+				flex: auto
+			.cell-3
+				position: relative
+				width: 800px
+				height: 340px
+				margin-top: 15px
+				flex: auto
+
+		.row-2
+			max-height: 800px
+			width: 100%
+			display: grid
+			grid-template-rows: repeat(2, 1fr)
+			grid-template-columns: repeat(4, 1fr)
+			grid-gap: 15px
+			overflow: hidden
+
+			.cell-1
+				position: relative
+				grid-row: span 2
+				grid-column: span 1
+			.cell-2
+				position: relative
+				grid-row: 1 / span 2
+				grid-column: 2 / span 2
+			.cell-3
+				position: relative
+				margin-top: -3px
+				grid-row: span 1
+				grid-column: span 1
+			.cell-4
+				position: relative
+				grid-row: span 1
+				grid-column: span 1
+		.row-3
+			max-height: 800px
+			margin-top: 10px
+			display: grid
+			grid-template-rows: 50% 50%
+			grid-template-columns: 50% 50%
+			grid-gap: 15px
+			overflow: hidden
+			.cell-1
+				position: relative
+				grid-row: 1fr
+				grid-column: 1fr
+			.cell-2
+				position: relative
+				grid-row: 1fr
+				grid-column: 1fr
+
+//=========== SERVICES
+
+.services
+	padding: 130px 0
+	//border: 1px solid red
+	background: url(..//img/bg-services.jpg)
+	color: #fff
+	&-title
+		text-align: center
+		text-shadow: 0px 0px 1px rgba(255,255,255,.7)
+		h3
+			font-size: 80px
+			line-height: 100px
+			font-weight: 600
+			margin-bottom: 10px
+			
+		span
+			font-size: 18px
+			line-height: 30px
+			font-weight: 300
+.services-box
+	margin-top: 90px
+	display: flex
+	justify-content: center
+
+	.box-1, .box-2, .box-3
+		text-align: center
+		width: 380px
+		margin: 0 10px
+		.ico
+			width: 160px
+			height: 160px
+			border-radius: 50%
+			border: 1px solid transparent
+			display: inline-block
+			position: relative
+			transition: all .5s
+			
+		.ico span
+			position: absolute
+			left: 15px
+			top: 15px
+			//margin: 20px 20px
+			display: inline-block
+			border-radius: 50%
+			
+			width: 130px
+			height: 130px
+
+
+		h4
+			font-size: 24px
+			line-height: 100px
+			font-weight: 600
+		ul
+			list-style: none
+		li
+			font-size: 14px
+			line-height: 30px
+			text-shadow: 0 0 1px silver
+	.box-1 .ico span
+		background: url(..//img/i-service-1.png) no-repeat
+		background-position: center center
+		background-size: contain
+	.box-2 .ico span
+		background: url(..//img/i-service-2.png) no-repeat
+		background-position: center center
+		background-size: contain
+	.box-3 .ico span
+		background: url(..//img/i-service-3.png) no-repeat
+		background-position: center center
+		background-size: contain
+
+//============== CONTACT
+
+.contact
+	padding: 133px 0 140px
+	//display: flex
+	//justify-content: space-between
+	&-top
+		display: flex
+		justify-content: center
+		padding-bottom: 90px
+	.top_tran
+		max-width: 470px
+		min-width: 320px
+		margin-right: 120px
+
+	.tran
+		font-size: 24px
+		//line-height: 100px
+		font-weight: 600	
+		letter-spacing: .01em
+		color: #7443ff
+		text-transform: uppercase
+	h3
+		font-size: 80px
+		line-height: 100px
+		font-weight: 600
+		margin: 40px 0
+	.des
+		font-size: 18px
+		line-height: 30px
+		font-weight: 300
+		margin-bottom: 40px
+		display: inline-block
+	p
+		font-size: 14px
+		line-height: 24px
+		color: #72787a
+	
+	.top_form
+		width: 50%
+		margin-left: 20px
+		
+		form
+			//width: 490px
+		input[type=text], select
+			font-size: 14px
+			text-shadow: 0 0 1px rgba(0,0,0,.2)
+			padding-bottom: 10px
+			line-height: 30px
+			height: 65px
+			border: none
+			border-bottom: 1px solid rgba(102,102,102,.3)
+			//border-bottom: 1px solid #666
+			color: $grey
+			width: 100%
+			margin-bottom: 30px
+			transition: all .5s
+			font-weight: 500
+
+			&:hover
+				
+				border-bottom: 1px solid $purple
+	
+			&:focus
+				color: #2a2d2e
+				font-weight: 500
+				text-shadow: 0 0 1px rgba(0,0,0,.2)
+
+		input[name=name]
+			background: url("..//img/ico/name.svg") no-repeat
+			background-position: 100% 50%
+			transition: all .5s
+			&:hover
+				background: url("..//img/ico/name-.svg") no-repeat
+				background-position: 100% 50%
+		input[name=email]
+			background: url("..//img/ico/email.svg") no-repeat
+			background-position: 100% 50%
+			&:hover
+				background: url("..//img/ico/email-.svg") no-repeat
+				background-position: 100% 50%
+		input[name=phone]
+			background: url("..//img/ico/phone.svg") no-repeat
+			background-position: 100% 50%
+			&:hover
+				background: url("..//img/ico/phone-.svg") no-repeat
+				background-position: 100% 50%						
+		input[name=company]
+			background: url("..//img/ico/company.svg") no-repeat
+			background-position: 100% 50%
+			&:hover
+				background: url("..//img/ico/company-.svg") no-repeat
+				background-position: 100% 50%		
+		input[id=dropdown]
+			background: url("..//img/ico/down.svg") no-repeat
+			background-position: 100% 50%
+			&:hover
+				background: url("..//img/ico/down-.svg") no-repeat
+				background-position: 100% 50%
+				cursor: pointer
+
+		.check div:first-child
+			margin-bottom: 30px
+		.check input
+			display: none
+			& + label
+				position: relative
+				font-size: 14px
+				line-height: 30px
+				color: $grey
+				padding-left: 50px
+			&:checked + label
+				font-weight: 500
+				color: $black
+			& + label::before
+				content: ''
+				width: 30px
+				height: 30px
+				display: inline-block
+				border: 1px solid $grey
+				opacity: .5
+				position: absolute
+				//top: 0
+				left: 0px
+		.check input:checked + label::before
+			background: url(..//img/ico/checked.png) no-repeat
+			background-position: center
+			opacity: 1
+			border: 1px solid $purple
+
+	.contact-bottom
+		border-top: 2px solid rgba(0,0,0, .1)
+		padding-top: 100px
+		display: flex
+		justify-content: flex-start
+
+		div
+			width: 33.3%
+			padding: 0 15px
+			
+		h4
+			font-size: 30px
+			margin-bottom: 40px
+			font-weight: 500
+		span
+			font-size: 18px
+			line-height: 30px
+			font-weight: 300
+
+.social
+	height: 220px
+	background: linear-gradient(to right, #93eef9, $purple)
+	.wrapper
+		height: 100%
+	&-box
+		height: 100%
+	i
+		font-size: 30px
+		line-height: 34px
+		//color: #999
+		color: #fff
+		text-shadow: 0 0 2px grey
+	table
+		width: 100%
+		height: 100%
+		border: none			
+		border-collapse: collapse
+	td
+		position: relative
+		border-left: 1px solid #ccc
+		text-align: center
+		width: 20%
+	td:first-child
+		width: 10%
+		text-align: left
+		border-left: none
+	td:last-child
+		width: 10%
+		text-align: right
+	a
+		position: absolute
+		left: 0
+		top: 0
+
+		display: block
+		width: 100%
+		height: 100%
+		i
+			transform: translateY(90px)
+
+	a::after
+		content: 'Follow us on Behance'
+		position: absolute
+		top: 150px
+		left: 25%
+		//display: none
+		opacity: 0
+		text-shadow: 0 0 3px $grey
+		transition: all 1s
+	a.tw::after
+		content: 'Follow us on Twitter'
+	a.fb::after
+		content: 'Follow us on Facebook'
+	a.dri::after
+		content: 'Follow us on Dribbble'
+	a.gp::after
+		content: 'Follow us on Google+'
+	a.wp::after
+		content: 'Follow us on WorldPress'				
+	td:first-child a::after
+		left: 0
+	a:hover::after
+		opacity: 1
+
+//============== FOOTER
+
+.footer
+	padding-top: 130px
+	.wrapper
+		border-bottom: 9px solid #14171d
+		padding-bottom: 100px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.footer-info 
+		width: 520px
+		margin-right: 20px
+		h4
+			line-height: 70px
+			padding-left: 90px
+			font-size: 26px
+			font-weight: 600
+			letter-spacing: -0.04em
+			color: #262b40
+			margin-bottom: 40px
+			background: url(..//img/footer-logo.png) no-repeat
+	.footer-subscribe 
+		width: 590px
+		margin-left: 20px
+		h4
+			font-size: 18px
+			font-weight: 600
+			letter-spacing: -0.04em
+			color: #262b40
+			margin-bottom: 40px
+		input
+			//position: relative
+			font-size: 14px
+			text-shadow: 0 0 1px rgba(0,0,0,.2)
+			padding-bottom: 10px
+			line-height: 30px
+			height: 65px
+			border: none
+			border-bottom: 1px solid #666
+			color: $grey
+			width: 100%
+			//margin-bottom: 30px
+			transition: all .5s
+			font-weight: 500
+			//background-image: url(..//img/ico/right.svg)
+			//background-position: 100%50%
+			//background-repeat: no-repeat
+		label
+			position: relative
+		.right
+			color: $black
+			display: inline-block
+			height: 20px
+			width: 20px
+			background-image: url(..//img/ico/right.svg)
+			background-position: 100%50%
+			background-repeat: no-repeat
+			position: absolute
+			right: 5px
+			top: 5px
+
+@import "_media"
+
+
+
+
+
+	
