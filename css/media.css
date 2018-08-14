@@ -12,7 +12,7 @@
   }
   .about .top_des
   {
-      width: 420px; 
+      width: 380px; 
   }
  .about .top_des h3
  {
@@ -23,7 +23,7 @@
 
 .about .bottom_des
 {
-    width: 420px; 
+    //width: 420px; 
 }
  .about .bottom_des h3
  {
@@ -284,7 +284,7 @@
     {
         font-size: 26px;
 
-        margin-bottom: 80px;
+        //margin-bottom: 80px;
     }
 
     .burger li a
@@ -427,6 +427,16 @@
 
 @media screen and (max-width: 360px)
 {
+	.mobile
+	{
+		top: 15px;
+		right: 15px;
+	}
+	.hero .logo
+	{
+		left: 5px;
+		top: 15px;
+	}
   .burger a
   {
     font-size: 30px;
@@ -444,4 +454,51 @@
     height: 35px;
     margin: 15px;
 }
+.hero .wrapper
+{
+	width: 100%;
+	margin: 0;
+	padding: 0 10px;
+}
+.hero-title h1
+{
+    font-size: 50px;
+	width: 100%;
+    color: #fff;
+}
+.hero-title p
+{
+	margin-bottom: 0;
+	line-height: 38px;
+	width: 100%;
+}
+.about .wrapper
+{
+	//width: 100%;
+	padding: 0 10px;
+
+}
+.about .top_des
+{
+    //width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.about .top_des h3
+{
+    font-size: 40px;
+    font-weight: 600;
+	width: 100%;
+    margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
+
+}
+.contact .top_tran
+{
+    min-width: 300px;
+    max-width: 470px;
+    margin-right: 0;
+}
+
 }

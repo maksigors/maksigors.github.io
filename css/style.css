@@ -5,9 +5,7 @@ body
 
     position: relative; 
 
-    min-width: 480px;
-
-    color: #2a2d2e;
+      color: #2a2d2e;
 }
 
 a
@@ -90,7 +88,7 @@ h1
 
 .mobile
 {
-    position: fixed;
+   position: fixed;
     z-index: 2;
     top: 30px;
     right: 30px;
@@ -292,11 +290,6 @@ h1
     background-size: cover;
 }
 
-body
-{
-    min-width: 360px;
-}
-
 .hero
 {
     display: flex;
@@ -389,9 +382,9 @@ body
 }
 .about .top_des
 {
-    min-width: 320px; 
+    //min-width: 320px; 
 
-    flex: none;
+    //flex: none;
 }
 .about .top_des h3
 {
