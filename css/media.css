@@ -274,9 +274,6 @@
 
 @media screen and (max-width: 561px)
 {
-	.btn {
-		background-color: red;
-	}
     .hero h1
     {
         font-size: 80px;
@@ -431,7 +428,7 @@
 @media screen and (max-width: 360px)
 {
 	body{
-		max-width: 100%;
+		max-width: 360px;
 	}
 	.mobile
 	{
@@ -512,10 +509,9 @@
 @media screen and (max-width: 320px)
 {
 	body{
-		display: flex;
-		width: 100%;
+		max-width: 320px;
 	}
-	.btn {
+	* .btn {
 		background-color: red;
 	}
 	
