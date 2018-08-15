@@ -426,11 +426,8 @@
 }		/* 560 */
 
 
-@media screen and (max-width: 360px)
+@media screen and (max-width: 361px)
 {
-	.btn {
-		background-color: red;
-	}
 	html, body{
 		max-width: 360px;
 	}
@@ -510,7 +507,7 @@
 
 }/* 360 */
 
-@media screen and (max-width: 320px)
+@media screen and (max-width: 321px)
 {
 	body{
 		max-width: 320px;
