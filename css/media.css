@@ -428,6 +428,11 @@
 
 @media screen and (max-width: 361px)
 {
+	.btn
+	{
+		background-color: firebrick;
+		color: white;
+	}
 	.mobile
 	{
 		top: 15px;
