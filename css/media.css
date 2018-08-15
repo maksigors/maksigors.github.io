@@ -501,4 +501,12 @@
     margin-right: 0;
 }
 
-}
+}/* 360 */
+
+@media screen and (max-width: 360px)
+{
+	* .btn {
+		background-color: red;
+	}
+	
+} /* 320 */
