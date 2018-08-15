@@ -427,6 +427,12 @@
 
 @media screen and (max-width: 360px)
 {
+<<<<<<< HEAD
+=======
+	body{
+		max-width: 360px;
+	}
+>>>>>>> parent of 2f2cf7b... tmp
 	.mobile
 	{
 		top: 15px;
@@ -505,7 +511,10 @@
 
 @media screen and (max-width: 320px)
 {
-	* .btn {
+	body{
+		max-width: 320px;
+	}
+	.btn {
 		background-color: red;
 	}
 	
