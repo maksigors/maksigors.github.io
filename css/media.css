@@ -509,3 +509,12 @@
 
 }/* 360 */
 
+@media screen and (max-width: 321px)
+{
+	.btn
+	{
+		background-color: bisque;
+		color: maroon;
+	}
+	
+}
