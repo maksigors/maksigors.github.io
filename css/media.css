@@ -427,6 +427,9 @@
 
 @media screen and (max-width: 360px)
 {
+	body{
+		max-width: 360px;
+	}
 	.mobile
 	{
 		top: 15px;
@@ -505,6 +508,9 @@
 
 @media screen and (max-width: 320px)
 {
+	body{
+		max-width: 320px;
+	}
 	* .btn {
 		background-color: red;
 	}
