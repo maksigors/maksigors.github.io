@@ -431,6 +431,10 @@
 	html, body{
 		max-width: 360px;
 	}
+	.btn {
+		background-color: firebrick;
+		color: white;
+	}
 	.mobile
 	{
 		top: 15px;
@@ -513,7 +517,7 @@
 		max-width: 320px;
 	}
 	.btn {
-		background-color: fireblick;
+		background-color: firebrick;
 		color: white;
 	}
 	
