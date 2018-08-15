@@ -512,6 +512,9 @@
 	body{
 		max-width: 320px;
 	}
-
+	.btn {
+		background-color: fireblick;
+		color: white;
+	}
 	
 } /* 320 */
