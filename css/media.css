@@ -511,6 +511,23 @@
 
 @media screen and (max-width: 321px)
 {
-
+	* .wrapper {
+		outline: 1px solid red;
+	}
+	* .btn {
+		background-color: green;
+		color: yellow;
+	}
+	.burger li a {
+				font-size: 40px; 
+				line-height: 1.5;
+	}
+	.hero-title p{
+		margin-bottom: 60px;
+	}
+	.contact .top_form {
+		margin-left: 0;
+	}
+	
 	
 }
